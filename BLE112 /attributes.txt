@@ -1,0 +1,6 @@
+bully_blue 17
+xgatt_battery 21
+xgatt_backup 25
+xgatt_main_code 29
+xgatt_lock_status 33
+xgatt_testing 37

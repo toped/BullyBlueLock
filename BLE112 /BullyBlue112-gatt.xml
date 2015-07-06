@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <service uuid="1800">
+      <description>Generic Access Profile</description>
+
+      <characteristic uuid="2a00">
+        <properties read="true" const="true" />
+        <value>BullyBlueLock</value>
+      </characteristic>
+
+      <characteristic uuid="2a01">
+        <properties read="true" const="true" />
+        <value type="hex">4142</value>
+      </characteristic>
+    </service>
+    <service uuid="180A">
+      <description>Device Information</description>
+      <characteristic uuid="2a29">
+        <properties read="true" const="true" />
+        <value>Bluegiga</value>
+      </characteristic>
+      <characteristic uuid="2a28">
+        <properties read="true" const="true" />
+        <value>1.0</value>
+      </characteristic>
+      <characteristic uuid="2a26">
+        <properties read="true" const="true" />
+        <value>25</value>
+      </characteristic>
+      <characteristic uuid="2a24">
+        <properties read="true" const="true" />
+        <value>BLE112</value>
+      </characteristic>
+    </service>
+	
+	<!--<service uuid="384abbc5-9ad6-4eaa-86af-1ee629ba9838" advertise="true"> -->
+	<service uuid="384abbc5-9ad6-4eaa-86af-1ee629ba9838" advertise="true">        <!-- original uuid we created   -->
+        <description>Hello Blue Lock</description>     
+        <!-- custom read-only characteristic for setting mode -->
+        <characteristic uuid="ee7c328f-6d47-4935-96ae-7ab28942074c" id="bully_blue">
+            <description>Hello Message</description>
+            <properties read="true" write="true" notify="true"/>
+            <value length="20">The Bully Blue Lock</value>
+        </characteristic>
+		
+		 <!-- custom read-only characteristic for setting mode -->
+        <characteristic uuid="f1b41cde-dbf5-4acf-8679-ecb8b4dca6fe" id="xgatt_battery">
+            <description>Battery Level</description>
+            <properties read="true" notify="true" write="true"/>
+            <value length="2" type="hex">00</value>
+        </characteristic>
+		
+		<characteristic uuid="0bd51666-e7cb-469b-8e4d-2742f1ba77cc" id="xgatt_backup">
+            <description>Backup Code entry</description>
+            <properties read="true" write="true" notify="true"/>
+            <value length="9" type = "hex"> </value>
+        </characteristic>
+		
+		<!--This characteristic will be unique to each individual blue lock-->
+		<characteristic uuid="C32CB835-CB53-4000-A942-C4817F42E21F" id="xgatt_main_code">
+            <description>Main Code</description>
+            <properties read="true" write="true" notify="true"/>
+            <value length="1"></value>
+        </characteristic>
+		
+		<characteristic uuid="E7731340-EA32-4127-BE92-B77B34793BFA" id="xgatt_lock_status">
+            <description>Lock Status</description>
+            <properties read="true" write="true" notify="true"/>
+            <value length="1"></value>
+        </characteristic>
+		
+		<characteristic uuid="86326989-7691-481B-99D2-F185444CBACC" id="xgatt_testing">
+            <description>Testing data</description>
+            <properties read="true" write="true" notify="true"/>
+            <value length="9"></value>
+        </characteristic>
+		
+		
+    </service>
+	
+
+</configuration>

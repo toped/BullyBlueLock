@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+    <gatt in="BullyBlue112-gatt.xml" />
+    <hardware in="BullyBlue112-hardware.xml" /> 
+    <script in="BullyBlue112.bgs" />
+    <image out="BullyBlue112.hex" />  
+    <device type="ble112" />  
+</project>

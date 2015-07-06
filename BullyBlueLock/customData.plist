@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Blue Lock Data</key>
+	<dict>
+		<key>Name</key>
+		<string>Bully Blue Lock</string>
+		<key>Owner</key>
+		<string>Bully Blue Lock Team</string>
+		<key>Discription</key>
+		<string></string>
+		<key>Backup Passcode</key>
+		<string>000000000</string>
+		<key>Guest 1</key>
+		<dict>
+			<key>Name</key>
+			<string></string>
+			<key>Taccessed</key>
+			<string></string>
+			<key>Xaccessed</key>
+			<string></string>
+			<key>Laccessed</key>
+			<string></string>
+		</dict>
+		<key>Guest 2</key>
+		<dict>
+			<key>Name</key>
+			<string></string>
+			<key>Taccessed</key>
+			<string></string>
+			<key>Xaccessed</key>
+			<string></string>
+			<key>Laccessed</key>
+			<string></string>
+		</dict>
+		<key>Guest 3</key>
+		<dict>
+			<key>Name</key>
+			<string></string>
+			<key>Taccessed</key>
+			<string></string>
+			<key>Xaccessed</key>
+			<string></string>
+			<key>Laccessed</key>
+			<string></string>
+		</dict>
+	</dict>
+</dict>
+</plist>
